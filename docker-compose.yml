@@ -1,6 +1,6 @@
 version: '2'
 services:
-    fastdfssracker:
+    fastdfstracker:
         restart: always
         image: evan1120/fastdfs_tracker
         hostname: fastdfs-tracker
