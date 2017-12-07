@@ -1,0 +1,31 @@
+version: '2'
+services:
+    fastdfssracker:
+        restart: always
+        build: tracker/
+        image: evan1120/fastdfs-tracker
+        hostname: fastdfs-tracker
+        volumes:
+        - ./tracker/config/:/etc/fdfs
+        ports:
+        - 22122:22122
+        container_name: fastdfs-tracker
+        networks:
+        - fastdfs
+    fastdfsstorage:
+        restart: always
+        build: storage/
+        image: evan1120/fastdfs-storage
+        hostname: fastdfs-storage
+        volumes:
+        - ./storage/config/:/etc/fdfs
+        ports:
+        - 23000:23000
+        - 8899:8899
+        container_name: fastdfs-storage
+        networks:
+        - fastdfs
+
+networks:
+    fastdfs:
+        driver: bridge
