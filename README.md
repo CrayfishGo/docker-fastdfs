@@ -1,5 +1,8 @@
 # docker-fastdfs
 
+# Preparation
+* Get the `tracker` image from here: [fastdfs_tracker](https://github.com/Evan1120/fastdfs_tracker)
+* Get the `storage` image from here: [fastdfs_storage](https://github.com/Evan1120/fastdfs_storage)
 
 # Usage
 
