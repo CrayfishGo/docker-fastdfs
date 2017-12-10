@@ -25,9 +25,8 @@ By default, the stack exposes the following ports:
 
 # Configuration
 
-1. 手动创建目录 `/data/fastdfs`。当然这个目录可以有个为您自己的目录结构
-2. 修改`config` 目录下的配置文件， 比如端口号， IP地址等配置信息。
+1. Manually create the directory `/data/fastdfs`. Also, you can specify your customized directory, such as: `/home/fastdfs`.
+2. Modify configuration files which under the `config` folder.
 
-*NOTE*: 这里我们使用docker容器的网络模式为：`host`模式，所以在部署之前，请先确认是否端口是否已经被使用。
 
 
