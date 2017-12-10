@@ -1,4 +1,3 @@
-# docker-fastdfs
 
 # Preparation
 * Get the `tracker` image from here: [fastdfs_tracker](https://github.com/Evan1120/fastdfs_tracker)
